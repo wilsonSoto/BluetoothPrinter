@@ -1,12 +1,20 @@
 package com.emysoto.plugins.printv;
 
+import android.Manifest;
+
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
+import com.getcapacitor.annotation.Permission;
 
-@CapacitorPlugin(name = "PrintV")
+@CapacitorPlugin(name = "PrintV", permissions = {
+        @Permission(
+                alias = "BLUETOOTH",
+                strings = { Manifest.permission.BLUETOOTH }
+        )
+})
 public class PrintVPlugin extends Plugin {
 
     private PrintV implementation = new PrintV();
@@ -17,6 +25,27 @@ public class PrintVPlugin extends Plugin {
 
         JSObject ret = new JSObject();
         ret.put("value", implementation.echo(value));
+        call.resolve(ret);
+    }
+
+    @PluginMethod
+    public void blPrint(PluginCall call) {
+        JSObject ret = new JSObject();
+        String value = call.getData().getString("value");
+        if (value == null || value == "") {
+            implementation.DisplayMessage(getContext(), "Debe proporcionar algun valor que imprimir");
+            return;
+        }
+        ret.put("value", implementation.blPrint( getContext(), value));
+        call.resolve(ret);
+    }
+
+    @PluginMethod
+    public void testingMessage(PluginCall call) {
+        String value = call.getData().getString("value");
+
+        JSObject ret = new JSObject();
+        ret.put("value", implementation.testingMessage(getContext(), value));
         call.resolve(ret);
     }
 }
