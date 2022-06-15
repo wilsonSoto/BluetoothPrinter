@@ -15,4 +15,17 @@ public class PrintVPlugin: CAPPlugin {
             "value": implementation.echo(value)
         ])
     }
+    @objc func blPrint(_ call: CAPPluginCall) {
+        let value = "Hola"
+        call.resolve([
+            "value": implementation.echo(value)
+        ])
+    }
+
+     @objc func testingMessage(_ call: CAPPluginCall) {
+        let value = "Hola"
+        call.resolve([
+            "value": implementation.echo(value)
+        ])
+    }
 }
