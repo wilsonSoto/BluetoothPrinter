@@ -1,6 +1,6 @@
 {
-  "name": "print-emy-bluetooth",
-  "version": "0.0.10",
+  "name": "printv",
+  "version": "0.0.13",
   "description": "Printer Blueetooth para Android",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
