@@ -9,18 +9,18 @@ npm install printv
 npx cap sync
 ```
 ## How to Use
-<!-- the printer must be connected to the device via Bluetooth -->
+ the printer must be connected to the device via Bluetooth 
 
-<!-- you must import the library where you want -->
+you must import the library where you want
 import { PrintV } from "printv";
 
-<!--
+## Definitions
  "\n it's a line break"
 "[L] It is used to position the text to the left"
 "[C] It is used to position the text in the center"
 "[R] Used to position the text to the right" 
--->
 
+## Example
 let textToPrint=   "[L]\n" +
                 "[L] <b>bold text</b>\n\n" +
                 "[C] <b>I am a text in the center</b>\n" +
@@ -31,7 +31,7 @@ let textToPrint=   "[L]\n" +
 
 this.dataPrinter = textToPrint;
 
-<!-- " information is sent to the printer" -->
+" information is sent to the printer"
 PrintV.blPrint({ value: this.dataPrinter });
 
 ## API
