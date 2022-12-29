@@ -1,7 +1,7 @@
 {
   "name": "print-emy-bluetooth",
   "version": "0.0.10",
-  "description": "Printer Blueetooth",
+  "description": "Printer Blueetooth para Android",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
