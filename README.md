@@ -25,7 +25,8 @@ npx cap sync
  "[R] Used to position the text to the right" 
 
 ## Example
- let textToPrint=   "[L]\n" +
+
+               let textToPrint=   "[L]\n" +
  
                "[L] <b>bold text</b>\n\n" +
                
@@ -37,8 +38,7 @@ npx cap sync
                 
                 "[L] <b>inserting text</b>\n" ,
                 
-
-this.dataPrinter = textToPrint;
+                this.dataPrinter = textToPrint;
 
 **" Information is sent to the printer"**
 
