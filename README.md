@@ -38,11 +38,11 @@ npx cap sync
                 
                 "[L] <b>inserting text</b>\n" ,
                 
-                this.dataPrinter = textToPrint;
+                let dataPrinter = textToPrint;
 
 **" Information is sent to the printer"**
 
- PrintV.blPrint({ value: this.dataPrinter });
+ PrintV.blPrint({ value: dataPrinter });
 
 ## API
 
