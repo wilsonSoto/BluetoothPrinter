@@ -1,7 +1,7 @@
 {
   "name": "printv",
-  "version": "0.0.13",
-  "description": "Printer Blueetooth para Android",
+  "version": "0.0.15",
+  "description": "Printer Blueetooth para Android with Notifications",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",

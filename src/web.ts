@@ -7,6 +7,10 @@ export class PrintVWeb extends WebPlugin implements PrintVPlugin {
     console.log('Imprimiendo desde la web');
     return true;
   }
+  getNotifications(): boolean {
+    console.log('Imprimiendo desde la web');
+    return true;
+  }
   blPrint(options: { value: string; }): boolean {
     console.log(options)
     console.log(options.value)

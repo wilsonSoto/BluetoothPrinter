@@ -7,4 +7,5 @@ CAP_PLUGIN(PrintVPlugin, "PrintV",
            CAP_PLUGIN_METHOD(echo, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(blPrint, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(testingMessage, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(getNotifications, CAPPluginReturnPromise);
 )

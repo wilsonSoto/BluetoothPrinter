@@ -28,4 +28,11 @@ public class PrintVPlugin: CAPPlugin {
             "value": implementation.echo(value)
         ])
     }
+
+    @objc func getNotifications(_ call: CAPPluginCall) {
+        let value = "Hola"
+        call.resolve([
+            "value": implementation.echo(value)
+        ])
+    }
 }

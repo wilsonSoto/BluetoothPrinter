@@ -51,6 +51,7 @@ npx cap sync
 * [`echo(...)`](#echo)
 * [`blPrint(...)`](#blprint)
 * [`testingMessage()`](#testingmessage)
+* [`getNotifications()`](#getnotifications)
 
 </docgen-index>
 
@@ -94,6 +95,17 @@ testingMessage() => boolean
 ```
 
 **Returns:** <code>boolean</code>
+
+--------------------
+
+
+### getNotifications()
+
+```typescript
+getNotifications() => any
+```
+
+**Returns:** <code>any</code>
 
 --------------------
 
