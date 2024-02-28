@@ -5,9 +5,9 @@ import Capacitor
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(PrintVPlugin)
-public class PrintVPlugin: CAPPlugin {
-    private let implementation = PrintV()
+@objc(printBPlugin)
+public class printBPlugin: CAPPlugin {
+    private let implementation = printB()
 
     @objc func echo(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""

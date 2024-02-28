@@ -1,11 +1,11 @@
-# printv
+# printB
 
 Printer Blueetooth
 
 ## Install
 
 ```bash
-npm install printv
+npm install printB
 npx cap sync
 ```
 ## How to Use
@@ -13,7 +13,7 @@ npx cap sync
 
 **you must import the library where you want:**
 
- import { PrintV } from "printv";
+ import { printB } from "printB";
 
 ## Definitions
  "\n it's a line break"
@@ -42,7 +42,7 @@ npx cap sync
 
 **" Information is sent to the printer"**
 
- PrintV.blPrint({ value: dataPrinter });
+ printB.blPrint({ value: dataPrinter });
 
 ## API
 

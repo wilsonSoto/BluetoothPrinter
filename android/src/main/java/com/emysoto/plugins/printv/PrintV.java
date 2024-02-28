@@ -1,4 +1,4 @@
-package com.emysoto.plugins.printv;
+package com.emysoto.plugins.printB;
 
 import android.Manifest;
 import android.content.Context;
@@ -31,7 +31,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Locale;
 
-public class PrintV {
+public class printB {
 
     private static final int GRAVITY_TOP = Gravity.TOP | Gravity.CENTER_HORIZONTAL;
     private static final int GRAVITY_CENTER = Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL;

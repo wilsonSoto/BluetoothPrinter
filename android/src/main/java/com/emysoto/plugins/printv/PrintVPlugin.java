@@ -1,4 +1,4 @@
-package com.emysoto.plugins.printv;
+package com.emysoto.plugins.printB;
 
 import android.Manifest;
 import com.getcapacitor.JSObject;
@@ -8,10 +8,10 @@ import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 import com.getcapacitor.annotation.Permission;
 
-@CapacitorPlugin(name = "PrintV", permissions = { @Permission(alias = "BLUETOOTH", strings = { Manifest.permission.BLUETOOTH }) })
-public class PrintVPlugin extends Plugin {
+@CapacitorPlugin(name = "printB", permissions = { @Permission(alias = "BLUETOOTH", strings = { Manifest.permission.BLUETOOTH }) })
+public class printBPlugin extends Plugin {
 
-    private PrintV implementation = new PrintV();
+    private printB implementation = new printB();
 
     @PluginMethod
     public void echo(PluginCall call) {

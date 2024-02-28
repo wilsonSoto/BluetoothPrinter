@@ -1,8 +1,8 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { PrintVPlugin } from './definitions';
+import type { printBPlugin } from './definitions';
 
-export class PrintVWeb extends WebPlugin implements PrintVPlugin {
+export class printBWeb extends WebPlugin implements printBPlugin {
   testingMessage(): boolean {
     console.log('Imprimiendo desde la web');
     return true;

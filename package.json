@@ -1,5 +1,5 @@
 {
-  "name": "printv",
+  "name": "printB",
   "version": "0.0.16",
   "description": "Printer Blueetooth para Android with Notifications",
   "main": "dist/plugin.cjs.js",
@@ -11,16 +11,16 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "Printv.podspec"
+    "printB.podspec"
   ],
   "author": "Emy Soto/ Wilson Soto",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emysaulconsultingdr/PrinterBluetooth.git.git"
+    "url": "git+https://github.com/wilsonSoto/BluetoothPrinter.git.git"
   },
   "bugs": {
-    "url": "https://github.com/emysaulconsultingdr/PrinterBluetooth.git/issues"
+    "url": "https://github.com/wilsonSoto/BluetoothPrinter.git/issues"
   },
   "keywords": [
     "capacitor",
@@ -37,7 +37,7 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api PrintVPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api printBPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",

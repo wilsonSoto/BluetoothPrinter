@@ -1,10 +1,10 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { PrintVPlugin } from './definitions';
+import type { printBPlugin } from './definitions';
 
-const PrintV = registerPlugin<PrintVPlugin>('PrintV', {
-  web: () => import('./web').then(m => new m.PrintVWeb()),
+const printB = registerPlugin<printBPlugin>('printB', {
+  web: () => import('./web').then(m => new m.printBWeb()),
 });
 
 export * from './definitions';
-export { PrintV };
+export { printB };

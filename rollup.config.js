@@ -4,7 +4,7 @@ export default {
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorPrintV',
+      name: 'capacitorprintB',
       globals: {
         '@capacitor/core': 'capacitorExports',
       },
